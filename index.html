@@ -397,12 +397,12 @@
                 return;
             }
             
-            const icon = dayIcons[day];
+            const openedIcon = openedEmojis[day];
             const text = dayContents[day];
             
             document.getElementById('modal-day').textContent = `🎄 Día ${day} 🎄`;
             document.getElementById('modal-text').innerHTML = `
-                <div style="font-size: 3em; margin-bottom: 20px;">${icon}</div>
+                <div style="font-size: 3em; margin-bottom: 20px;">${openedIcon}</div>
                 <div>${text}</div>
             `;
             document.getElementById('modal').classList.add('show');
